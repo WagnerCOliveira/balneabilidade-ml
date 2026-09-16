@@ -2,7 +2,7 @@
 
 TCC do MBA em Ciências de Dados (turma T9) — previsão se uma praia está própria ou imprópria para banho a partir de dados climáticos, sem esperar pelo resultado do exame de coliformes (que pode levar até 7 dias).
 
-O modelo combina laudos de análise da água da SEMACE (2014–2022) com dados climáticos do INMET (estação A305, Fortaleza). O melhor resultado foi um XGBoost, com **96,62% de acurácia** sobre um teste real de 2.218 amostras.
+O modelo combina 11.026 laudos de análise da água da SEMACE (2014–2022) com dados climáticos do INMET (estação A305, Fortaleza). O melhor resultado foi um XGBoost, na configuração baseline (sem ajuste de hiperparâmetros), com **96,71% de acurácia** (validação cruzada, 5 dobras, ± 0,38 ponto percentual) — estatisticamente empatado com as duas melhores alternativas testadas, mas escolhido por ser a mais simples entre elas.
 
 O texto completo do trabalho, com toda a metodologia, análise e discussão dos resultados, está em [`TCC_Wagner_Oliveira_T9.pdf`](TCC_Wagner_Oliveira_T9.pdf).
 
